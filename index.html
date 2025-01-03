@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Test Project</title>
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Test Project!</h1>
+    <header>
+        <h1>Currency Calculator</h1>
+    </header>
+    <main>
+        <section id="converter">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button id="convertButton">Convert</button>
+        </section>
+        <section id="results">
+            <h2>Conversion Result:</h2>
+            <p id="resultDisplay"></p>
+        </section>
+        <section id="ratesTable">
+            <h2>All Exchange Rates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Dynamic content -->
+                </tbody>
+            </table>
+        </section>
+        <section id="chart">
+            <canvas id="exchangeChart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Currency Calculator</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
